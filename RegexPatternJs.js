@@ -7,6 +7,7 @@ let zip3 = "400088B";// UC3 - Regex pattern to validate zip code 400088B should 
 let zip4 = "400 088";// UC4 - Regex pattern to validate zip code 400 088 should pass
 let email1 = "abc.xyz@bridgelabz.co.in";// UC1 - Regex pattern to validate email to check abc part and should pass
 let email2 = "abc.xyz@bridgelabz.co.in";// UC2 - Regex pattern to validate email to check @ part and should pass
+let email3 = "abc.xyz@bridgelabz.co.in";// UC2 - Regex pattern to validate email to check "." part after bridgelabz and should pass
 try{
     if(!ZIPCODE.test(zip4)) throw "Invalid Zip code"
     {
@@ -16,11 +17,10 @@ try{
     console.log(Exception);
 }
 try{
-    if(!EMAIL.test(email2)) throw "Invalid emailId"
+    if(!EMAIL.test(email3)) throw "Invalid emailId"
     {
         console.log("Valid emailId");
     }
 }catch(Exception){
     console.log(Exception);
 }
-
